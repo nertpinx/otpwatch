@@ -1,0 +1,34 @@
+{
+    "uuid": "77de931d-edb9-4048-97d7-83600915b002",
+    "shortName": "otpwatch",
+    "longName": "otpwatch",
+    "companyName": "Nert",
+    "versionLabel": "1.0",
+    "sdkVersion": "3",
+    "targetPlatforms": ["aplite", "basalt"],
+    "watchapp": {
+	"watchface": true
+    },
+    "appKeys": {
+	"dummy": 0
+    },
+    "resources": {
+	"media": [
+	    {
+		"name": "BLUETOOTH",
+		"file": "bluetooth.png",
+		"type": "png"
+	    },
+	    {
+		"name": "CHARGING",
+		"file": "charging.png",
+		"type": "png-trans"
+	    },
+	    {
+		"name": "BATTERY",
+		"file": "battery.png",
+		"type": "png"
+	    }
+	]
+    }
+}

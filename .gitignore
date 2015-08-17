@@ -1,0 +1,15 @@
+
+# Ignore build generated files
+build
+
+# Ignore waf lock file
+.lock-waf*
+
+# Generated tags
+GPATH
+GRTAGS
+GTAGS
+TAGS
+
+# Configuration
+/src/config.h

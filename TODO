@@ -1,0 +1,14 @@
+Here's a list of bugs and/or needed improvements.
+
+Timezone support:
+
+  You either have to re-sync the token or wait till you get to your
+  original timezone in order for this to work.  This should actually
+  be only a problem of the basalt build since time() works properly on
+  aplite!
+
+Batterry charging overlay:
+
+  The "lightning" that gets layed over the battery icon when the
+  watches are being charged should have 1px black border (margin), but
+  it currently overlays the whole rectangle.

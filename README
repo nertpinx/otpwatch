@@ -1,0 +1,7 @@
+This is based on https://github.com/pipo/tokenwatch but rewritten
+quite a bit.
+
+When cloned, you need to go to the src/ directory and run enroll.sh
+(which requires xxd command installed).
+
+Also see TODO in order to see what doesn't work (yet).
