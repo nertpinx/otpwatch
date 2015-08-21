@@ -4,8 +4,8 @@ Timezone support:
 
   You either have to re-sync the token or wait till you get to your
   original timezone in order for this to work.  This should actually
-  be only a problem of the basalt build since time() works properly on
-  aplite!
+  be only a problem of the aplite build since time() works properly on
+  basalt!
 
 Batterry charging overlay:
 
