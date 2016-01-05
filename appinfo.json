@@ -21,17 +21,17 @@
 	    {
 		"name": "BLUETOOTH",
 		"file": "bluetooth.png",
-		"type": "png"
+		"type": "bitmap"
 	    },
 	    {
 		"name": "CHARGING",
 		"file": "charging.png",
-		"type": "png-trans"
+		"type": "bitmap"
 	    },
 	    {
 		"name": "BATTERY",
 		"file": "battery.png",
-		"type": "png"
+		"type": "bitmap"
 	    }
 	]
     }
