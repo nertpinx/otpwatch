@@ -15,9 +15,10 @@ else
 EOF
 fi
 
-SEED=$(dd if=/dev/random bs=1 count=20 2>/dev/null | xxd -c 20 -g 2 -i)
-TEXTSEED=$(echo -n "$SEED" | sed -e 's/[, ].0x//g')
+SEED=$(dd if=/dev/random bs=1 count=20 2>/dev/null | od -t x1 -A n -w64 -v)
+CODESEED=$(echo -n "$SEED" | sed -e 's/^ */0x/' -e 's/ /, 0x/g')
+TEXTSEED=$(echo -n "$SEED" | sed -e 's/ //g')
 
 
-echo "#define TOTP_SECRET {$SEED } " >> config.h
+echo "#define TOTP_SECRET { $CODESEED } " >> config.h
 echo $TEXTSEED
