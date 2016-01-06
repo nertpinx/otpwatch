@@ -85,7 +85,7 @@ handle_minute_tick(struct tm *tick_time, TimeUnits units_changed)
 	static char s_token_text[] = "123 456";
 	static char s_date_text[] = "Xxxxxxxxx 00";
 	static char s_time_text[] = "00:00";
-	const char *code = pebble_totp_get_code(&token, mktime(tick_time));
+	const char *code = pebble_totp_get_code(&token, time(NULL));
 
 	strncpy(s_token_text, code, 3);
 	strncpy(s_token_text + 4, code + 3, 3);
